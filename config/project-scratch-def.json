@@ -1,7 +1,8 @@
 {
-  "orgName": "amiagraw1 company",
+  "orgName": "Amit LWC Training 2020 company",
   "edition": "Developer",
   "features": [],
+  "hasSampleData":true,
   "settings": {
     "lightningExperienceSettings": {
         "enableS1DesktopEnabled": true
