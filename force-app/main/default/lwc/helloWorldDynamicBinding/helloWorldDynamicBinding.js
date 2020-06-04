@@ -1,4 +1,5 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement } from 'lwc';
+import { track } from 'lwc';
 
 export default class HelloWorldDynamicBinding extends LightningElement {
     @track dynamicGreeting = 'World';
