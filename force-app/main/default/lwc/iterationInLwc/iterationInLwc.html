@@ -1,0 +1,14 @@
+<template>
+    
+
+    <template for:each={cityList} for:item="city">
+        <p key={city}>{city}</p>
+    </template>
+
+    <h1>Below is an example of iterator directive</h1>
+    
+    <template iterator:it={cityList} >
+        <p key={it.value}>{it.value}</p>
+    </template>
+
+</template>
