@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title={bmi_title}>
+        <lightning-button label="change the private property (Non-reactive) value" onclick={changePrivatePropertyValueHandler}></lightning-button>
+    </lightning-card>
+
+    <lightning-card title='BMI Calculator'>
+        <lightning-input type="number" label="Weight in KG" onchange={weightInKgHandler}></lightning-input>
+        <lightning-input type="number" label="Height in Meter" onchange={HeightInMeterHandler}></lightning-input>
+        <lightning-button label="calculate BMI" onclick={calculateBmiHandler}></lightning-button>
+        <p> BMI = {result}</p>
+    </lightning-card>
+</template>
