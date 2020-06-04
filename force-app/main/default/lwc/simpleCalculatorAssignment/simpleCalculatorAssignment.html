@@ -1,0 +1,28 @@
+<template>
+    
+<lightning-card>
+    <h3 slot="title">
+        <lightning-icon icon-name="standard:formula" size="small"></lightning-icon>
+        <span style="margin: 3px;font-weight: bold;font-size: 14pt;"> Simple Calculator</span>
+    </h3>
+
+    <div>
+        <lightning-input type="number" name="input1" label="First Number" onchange={numberChangeHandler}></lightning-input>
+        <lightning-input type="number" name="input2" label="Secound Number" onchange={numberChangeHandler}></lightning-input>
+
+    </div>
+    <div class="slds-m-top_x-large slds-m-bottom_small">
+        <lightning-button label="Add"  icon-name="utility:add" class="slds-m-left_x-small" icon-position="right" onclick={addtwoNumberhandler}></lightning-button>
+        <lightning-button label="Subtract"  icon-name="utility:dash" class="slds-m-left_x-small" icon-position="right" onclick={subtracttwoNumberhandler}> </lightning-button>
+        <lightning-button label="multiply"  icon-name="utility:close" class="slds-m-left_x-small" icon-position="right" onclick={multiplytwoNumberhandler}></lightning-button>
+        <lightning-button label="Divide"  icon-name="utility:magicwand" class="slds-m-left_x-small" icon-position="right" onclick={dividetwoNumberhandler}></lightning-button>
+    </div>
+
+    <div class="slds-m-top_x-large slds-m-bottom_small">
+        {currentResult}
+    </div>
+
+</lightning-card>
+
+
+</template>
