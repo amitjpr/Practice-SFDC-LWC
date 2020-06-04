@@ -1,0 +1,12 @@
+<template>
+    <div> I am here, uncheck the checkbox to hide me</div>
+    <lightning-input type="checkbox" label="togal Div" onchange={showDivHandler}></lightning-input>
+
+    <template if:true={displayDiv}>
+        <div> I am here, uncheck the checkbox to hide me</div>
+    </template>
+
+    <template if:false={displayDiv}>
+        <div> I am not here, check the checkbox to show me</div>
+    </template>
+</template>
