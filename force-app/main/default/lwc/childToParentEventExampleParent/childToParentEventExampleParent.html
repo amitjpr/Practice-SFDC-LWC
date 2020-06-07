@@ -1,0 +1,12 @@
+<template>
+
+    <ul>
+        <template for:each={meetingRoomsInfo} for:item="room">
+            <li key={room.roomName} style="padding: 10px;"> 
+                <c-child-to-parent-event-example meeting-room-info={room} onchildclick={childClickHandler}></c-child-to-parent-event-example>
+            </li>
+        </template>
+    </ul>
+
+    
+</template>
